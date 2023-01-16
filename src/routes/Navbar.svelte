@@ -11,6 +11,8 @@
 			title: 'About'
 		}
 	];
+	import light_logo from '../libs/assets/light_logo.png';
+	import dark_logo from '../libs/assets/dark_logo.png';
 </script>
 
 
@@ -20,9 +22,14 @@
 			<div class="flex items-center w-full">
 				<div class="flex-shrink-0">
 					<img
-						class="h-8 w-8"
-						src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-						alt="Your Company"
+						class="h-8 w-8 dark:hidden"
+						src={light_logo}
+						alt="Emily the E-mail assistant"
+					/>
+					<img
+						class="h-50 w-50 hidden dark:block overflow-visible m-20 mb-10"
+						src={dark_logo}
+						alt="Emily the E-mail assistant"
 					/>
 				</div>
 				<div class="hidden md:block w-full">
