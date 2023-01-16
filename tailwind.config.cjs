@@ -5,7 +5,9 @@ const config = {
 		extend: {
 			colors: {
 				primary: '#ab51e3',
-				secondary: '#f7f7f7',
+				secondary: '#35e95f',
+				darkGray: "#191a21",
+				lightGray: "#2c2f3a",
 			}
 		}
 	},
