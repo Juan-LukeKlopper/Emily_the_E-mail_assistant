@@ -8,6 +8,8 @@ const config = {
 				secondary: '#35e95f',
 				darkGray: "#191a21",
 				lightGray: "#9397bb",
+				mediumlightGray: "#787c9c",
+				mediumdarkGray: "#2e2f3c",
 			}
 		}
 	},
