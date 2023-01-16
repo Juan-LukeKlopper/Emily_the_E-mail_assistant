@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    let text = "Please enter the E-mail you want to reply to";
+</script>
+
+<svelte:head>
+	<title>Emily the E-mail assistant</title>
+	<meta name="E-mail assistant landing page" content="Emily, An AI powered E-mail response assistant" />
+</svelte:head>
+
+<h1 class="text-6xl dark:text-white text-gray-900 text-center">Welcome to Emily</h1>
+<p class="text-xl dark:text-white text-gray-900 text-center">The AI powered E-mail response assistant</p>
+
+<div class="flex ">
+	<div class="bg-white dark:bg-black w-1/5"/>
+	<textarea cols="30" rows="10" bind:value={text} class="w-3/5 h-6/12 text-center" />
+	<div class="bg-white dark:bg-black w-1/5 "/>
+</div>
+
+
+
