@@ -9,7 +9,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "Please respond to the following email in the tone of Lex Fridman without saying his name.      Email:";
+const basePromptPrefix = "Please rewrite this email to be profresional, Also fix the spelling and grammer     Email:";
 const basePromtSuffix = " Response: "
 
 export const POST: RequestHandler = async (event) => {
