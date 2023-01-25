@@ -23,9 +23,9 @@ export const POST: RequestHandler = async (event) => {
     
     const baseCompletion = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: `${basePromptPrefix}${userInput}${basePromtSuffix}`,
-        temperature: 0.7,
-        max_tokens: 250,
+        prompt: `${basePromptPrefix}${userInput}\n${basePromtSuffix}`,
+        temperature: 0.9,
+        max_tokens: 500,
     });
 
     const basePromptOutput = baseCompletion.data.choices.pop();
