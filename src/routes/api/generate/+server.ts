@@ -25,7 +25,7 @@ export const POST: RequestHandler = async (event) => {
         model: 'text-davinci-003',
         prompt: `${basePromptPrefix}${userInput}\n${basePromtSuffix}`,
         temperature: 0.9,
-        max_tokens: 500,
+        max_tokens: 750,
     });
 
     const basePromptOutput = baseCompletion.data.choices.pop();
