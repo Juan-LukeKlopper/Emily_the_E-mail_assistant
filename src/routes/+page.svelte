@@ -39,7 +39,7 @@
 
 <div class="flex ">
 	<div class="bg-white dark:bg-black w-1/5"/>
-	<textarea placeholder="Please enter the email you want to respond to" cols="30" rows="10" bind:value={text} class="w-3/5 h-6/12 text-center border-double border-2 border-black dark:border-white bg-mediumlightGray" />
+	<textarea placeholder="Please enter the information you want in the e-mail" cols="30" rows="10" bind:value={text} class="w-3/5 h-6/12 text-center border-double border-2 border-black dark:border-white bg-mediumlightGray" />
 	<div class="bg-white dark:bg-black w-1/5 "/>
 </div>
 <div class="flex my-4 justify-center justify-items-center">
