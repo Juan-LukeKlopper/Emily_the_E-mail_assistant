@@ -1,38 +1,42 @@
-# create-svelte
+# Emily the E-mail Assistant
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Emily is an AI powered e-mail response generator that helps you save time by automatically generating responses to common e-mails. This project is built using Sveltekit, Tailwind, and Typescript.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- AI powered e-mail response generation
+- Fast and responsive UI built with Sveltekit
+- Modern and stylish design with Tailwind
+- TypeScript for strong typing and improved developer experience
+- Automated CI/CD with GitHub Actions
 
+## Getting Started
+
+Clone the repository
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/Juan-LukeKlopper/Emily_the_E-mail_assistant.git
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+Install dependencies
 ```bash
-npm run dev
+npm install
+```
 
-# or start the server and open the app in a new browser tab
+Start the development server
+```bash
 npm run dev -- --open
 ```
 
-## Building
+The development server will start on http://localhost:3000 and will automagically open in your browser.
 
-To create a production version of your app:
 
-```bash
-npm run build
-```
+## Deployment
+This project uses GitHub Actions for CI/CD. Every time you make a pull request to the repository, A GitHub Actions will automatically build and publish the latest version of the app as an image on dockerhub. The image will be available as cosmicsloth/emily_the_e-mail_assistant:nightly.
 
-You can preview the production build with `npm run preview`.
+Additionally everytime you tag a commit with a version number, a GitHub Action will automatically build and publish the tagged version of the app as an image on dockerhub. The image will be available as cosmicsloth/emily_the_e-mail_assistant:tag.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+##  Contributions
+I gladly welcome contributions to this project. If you have an idea for a new feature or have found a bug, please open an issue to let us know. If you'd like to contribute code, please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
