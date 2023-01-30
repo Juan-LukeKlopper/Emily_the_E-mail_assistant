@@ -12,13 +12,13 @@ const openai = new OpenAIApi(configuration);
 const basePromptPrefix = "Please rewrite this email to be profresional, Also fix the spelling and grammer     Email:";
 const basePromtSuffix = " Response: "
 
-export const POST: RequestHandler = async (event) => {
+export const POST: RequestHandler = async (event: any) => {
     const request = await event.request.json();
     const userInput: string = request['text'];
 
     
     // Run first prompt
-    console.log(`API: ${basePromptPrefix}${userInput}${basePromtSuffix}`)
+    console.log(`UserInput: ${userInput}`)
 
     
     const baseCompletion = await openai.createCompletion({
@@ -29,6 +29,7 @@ export const POST: RequestHandler = async (event) => {
     });
 
     const basePromptOutput = baseCompletion.data.choices.pop();
+    console.log(`BasePromptOutput: ${basePromptOutput}`)
 
     return new Response(JSON.stringify({ output: basePromptOutput}), {
         headers: {
