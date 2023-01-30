@@ -1,8 +1,6 @@
 name: Build and Push Docker Image
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -34,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{env.DOCKER_IMAGE_NAME}}:latest
+          tags: ${{env.DOCKER_IMAGE_NAME}}:nightly
