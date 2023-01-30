@@ -34,4 +34,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: $DOCKER_IMAGE_NAME:latest
+          tags: ${{env.DOCKER_IMAGE_NAME}}:latest
